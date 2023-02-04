@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "CSAutoAccept",
+    "version": "1.0",
+    "description": "Auto accept matches on esportal and faceit.",
+    "icons": {
+        "48": "cs-aa.svg",
+        "96": "cs-aa.svg",
+        "128": "cs-aa.svg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.esportal.com/*"
+            ],
+            "js": [
+                "esportal.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://*.faceit.com/*"
+            ],
+            "js": [
+                "faceit.js"
+            ]
+        }
+    ]
+}
